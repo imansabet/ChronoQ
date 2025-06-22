@@ -38,4 +38,9 @@ public class User
         user.ProviderProfile = new ProviderProfile(user.Id, businessName, location);
         return user;
     }
+    
+    public void SetHashedPassword(string hashedPassword)
+    {
+        PasswordHash = hashedPassword;
+    }
 }
